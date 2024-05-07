@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adarsh S. Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <div id="header">
         <div class="container">
             <nav>
                 <img src="./Images/Logo.png" class="logo" alt="">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Statics</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Resume</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Statics">Statics</a></li>
+                    <li><a href="#Contacts">Contact</a></li>
+                    <li><a href="Images/Adarsh_Srivastava.pdf" download>Resume <i
+                                class="fa-regular fa-circle-down"></i></a></li>
+                                <i class="fa-regular fa-circle-xmark ad" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars ad" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <h1>Hi,<br> I'm Adarsh Srivastava</h1>
@@ -26,7 +36,7 @@
         </div>
     </div>
 
-<!-- about section -->
+    <!-- about section -->
 
     <div id="about">
         <div class="container">
@@ -37,14 +47,15 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, consectetur expedita! Enim nihil debitis in vero sunt, a nobis excepturi.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, consectetur expedita! Enim nihil
+                        debitis in vero sunt, a nobis excepturi.</p>
 
                     <div class="tab-title">
-                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('Projects')">Projects</p>
+                        <p class="tab-links active-link" onclick="opentab('Skill')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Project')">Projects</p>
                         <p class="tab-links" onclick="opentab('Education')">Education</p>
                     </div>
-                    <div class="tab-containts active-tab" id="Skills"> 
+                    <div class="tab-containts active-tab" id="Skill">
                         <ul>
                             <li><span>UI/UX</span><br>Designing Web interface</li>
                             <li><span>HTML5 / CSS3 / Bootstrap / Tailwind</span><br>Building Resposive Website</li>
@@ -55,26 +66,31 @@
                             <li><span>Tools-</span><br>Git & VSCode</li>
                         </ul>
                     </div>
-                    <div class="tab-containts" id="Projects"> 
+                    <div class="tab-containts" id="Project">
                         <ul>
                             <li><span>Travel With Us
-                            </span><br><p>HTML, CSS, JavaScript
-                            </p><br>Travel With Us is an online travel agency
-                            and accommodation booking platform that
-                            facilitates users in finding and booking
-                            accommodations worldwide</li>
+                                </span><br>
+                                <p>HTML, CSS, JavaScript
+                                </p>Travel With Us is an online travel agency
+                                and accommodation booking platform that
+                                facilitates users in finding and booking
+                                accommodations worldwide
+                            </li>
                             <li><span>Stay Updated
-                            </span><br><p>HTML, CSS, JavaScript
-                            </p><br>The project is to create a news website
-                            that provides up-to-date and accurate
-                            information to its audience.</li>
-                            
+                                </span><br>
+                                <p>HTML, CSS, JavaScript
+                                </p>The project is to create a news website
+                                that provides up-to-date and accurate
+                                information to its audience.
+                            </li>
+
                         </ul>
                     </div>
-                    <div class="tab-containts" id="Education"> 
+                    <div class="tab-containts" id="Education">
                         <ul>
                             <li><span>Full Stack Development</span><br>Masai School (2023-2024)</li>
-                            <li><span>Bachelor of Computer Application</span><br>School of Management Sciences, Varanasi (2019-2022)</li>
+                            <li><span>Bachelor of Computer Application</span><br>School of Management Sciences, Varanasi
+                                (2019-2022)</li>
                         </ul>
                     </div>
                 </div>
@@ -85,29 +101,110 @@
     <!-- about section end -->
 
     <!--  skills start -->
-    <div id="about">
+    <div id="Skills">
         <div class="container">
-            <h1 class="sub-title">My Statics</h1>
-        </div>    
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills">
+                <ul>
+                    <li><span>UI/UX</span><br>Designing Web interface</li><br>
+                    <li><span>HTML5 / CSS3 / Bootstrap / Tailwind</span><br>Building Resposive Website</li><br>
+                    <li><span>JavaScript</span><br>Frontend Development</li><br>
+                    <li><span>SQL / MongoDB</span><br>Database Management</li><br>
+                    <li><span>React</span><br>Development Framework</li><br>
+                    <li><span>JAVA</span><br>Data Structure & Algorithms</li><br>
+                    <li><span>Tools-</span><br>Git & VSCode</li><br>
+                </ul>
+
+            </div>
+        </div>
     </div>
     <!-- skills end here -->
-
-    <!--  statics start -->
-    <div id="about">
+    <!-- Projects start here -->
+    <div id="Projects">
         <div class="container">
-            <h1 class="sub-title">My Statics</h1>
-        </div>    
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects">
+                <div class="Project">
+                    <a href="https://sparkling-basbousa-4332b5.netlify.app/"><img src="./Images/TravelWithUs.png"
+                            alt=""></a>
+                    <h4>Travel With Us <span> (clone of Booking.com)</span></h4>
+                    <h6>HTML, CSS, JavaScript</h6>
+                    <a class="git" href="https://github.com/kajal-kumari03/Js-204">Github-Link <i
+                            class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                <div class="Project">
+                    <a href="https://delightful-liger-361c3b.netlify.app/"><img src="./Images/StayUpdated.png"
+                            alt=""></a>
+                    <h4>Stay-Updated <span> (clone of a News-Website)</span></h4>
+                    <h6>HTML, CSS, JavaScript</h6>
+                    <a class="git" href="https://github.com/Biswajit2595/STAY_UPDATE">Github-Link <i
+                            class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                <div class="Project">
+                    <a href="https://clever-alpaca-8b5e93.netlify.app/"><img src="./Images/Marvel.png" alt=""></a>
+                    <h4>Marvel <span> (clone of Marvel Official website)</span></h4>
+                    <h6>HTML, CSS</h6>
+                    <a class="git" href="https://github.com/sathwikreddy122/CW_Marvel">Github-Link <i
+                            class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Projects End here  -->
+    <!--  statics start -->
+    <div id="Statics">
+        <div class="container">
+            <h1 class="sub-title">My Stats</h1>
+            <div class="statics">
+                <div class="stats">
+                    <h4>2023</h4>
+                    <img src="./Images/Stats-2023.png" alt="#">
+                </div>
+                <div class="skill">
+                    <h4>2024</h4>
+                    <img src="./Images/Stats-2024.png" alt="#">
+                </div>
+
+            </div>
+        </div>
     </div>
     <!-- statics end here -->
 
     <!--  contact start -->
-    <div id="about">
+    <div id="Contacts">
         <div class="container">
-            <h1 class="sub-title">My Statics</h1>
-        </div>    
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i> adarshsrivastava0348@gmail.com</p>
+                    <p> <i class="fa-solid fa-square-phone"></i> 09305296294</p>
+                    <div class="social-icons">
+                        <a href="https://mail.google.com/"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="www.linkedin.com/in/adarsh-s-225955226"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/AadiSrii"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                    <a href="Images/Adarsh_Srivastava.pdf" download class="btn btn2 ">Download Resume <i
+                            class="fa-solid fa-download"></i></a>
+                </div>
+                <div class="contact-right">
+                <form action="">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Enter Your Meaasage" required></textarea>
+                    <button type="submit" class="btn btn3">Submit</button>
+                </form>
+            </div>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Adarsh Srivastava <i class="fa-solid fa-heart"></i> | All Rights Reserved.</p
+        </div>
     </div>
     <!-- contact end here -->
 
 </body>
 <script src="script.js"></script>
+
 </html>
